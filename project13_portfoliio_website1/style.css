@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--FONT-FAMILY1);
+}
+:root {
+  --MAIN-THEME-BG-COLOR: rgb(103, 111, 84);
+  --MAIN-THEME-BG-COLOR2: rgb(103, 111, 80);
+  --MAIN-SPECIAL-COLOR: rgb(121, 180, 169);
+  --FONT-COLOR: rgb(215, 242, 186);
+  --BORDER-COLOR: rgb(0, 0, 0);
+
+  --FONT-SIZE: rgb(1.1rem);
+  --FONT-FAMILY1: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --FONT-FAMILY2: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--MAIN-THEME-BG-COLOR);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  ------------------------------ 1st page  */
+.main-cont {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.nav-bar {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 1%, 24%);
+  position: sticky;
+  top: 0;
+  padding: 0 2rem 0 2rem;
+}
+.logo {
+  height: 100%;
+  width: 8rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: rgb(245, 245, 245);
+  font-weight: 600;
+}
+.nav-options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+.nav-options a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.nav-options a:hover {
+  text-decoration: underline;
+  color: rgb(245, 245, 269);
+}
+.main-page {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 5rem;
+}
+.about-me-content {
+  width: 50%;
+  height: 20rem;
+  text-align: left;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.about-me-content h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.about-me-content p {
+  font-size: 1.2rem;
+}
+.about-me-more-btn {
+  width: 10rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--MAIN-SPECIAL-COLOR);
+  color: black;
+  font-size: var(--FONT-SIZE);
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.figure {
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem yellow;
+}
+.figure img {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: block;
+}
+
+/* --------------------------- 1st page media queries */
+
+@media screen and (min-width: 280px) and (max-width: 660px) {
+  .nav-bar {
+    padding: 0 1rem 0 1rem;
+  }
+  .nav-bar .nav-options {
+    display: none;
+  }
+  .main-page {
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+  }
+  .about-me-content {
+    width: 100%;
+
+    flex-flow: column nowrap;
+  }
+  .about-me-content h1 {
+    font-size: 1.5rem;
+  }
+  .about-me-content p {
+    font-size: 0.8rem;
+  }
+  .about-me-more-btn {
+    font-size: var(--FONT-SIZE);
+  }
+  .figure img {
+    width: 340px;
+    height: 340px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 900px) {
+  .nav-bar .nav-options {
+    display: none;
+  }
+  .main-page {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .about-me-content {
+    width: 100%;
+
+    flex-flow: column nowrap;
+  }
+
+  .about-me-more-btn {
+    font-size: var(--FONT-SIZE);
+  }
+  .figure {
+    margin-left: 1.5rem;
+  }
+  .figure img {
+    width: 300px;
+    height: 300px;
+    margin-top: 1.5rem;
+  }
+}
+
+/*------------------------------ 2nd page  */
+.my-projects-page {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.website {
+  width: 40%;
+  flex-grow: 1;
+  flex-basis: 1000;
+  text-decoration: none;
+  text-align: center;
+  border: 5px solid papayawhip;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.website video {
+  width: 100%;
+  height: 30rem;
+}
+.website a {
+  font-size: 1.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/*  ------------------------------ scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+  padding: 2px;
+}

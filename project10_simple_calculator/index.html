@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-cont">
+      <div class="display">
+        <input type="text" class="input-field" />
+      </div>
+      <div class="buttons">
+        <button onclick="clearButton()" class="option">DC</button>
+        <button onclick="deleteButton()" class="option">Del</button>
+        <button onclick="operatorButton()" class="option">.</button>
+        <button onclick="addToDisplay('+')" class="option">+</button>
+
+        <button onclick="addToDisplay('7')" class="option">7</button>
+        <button onclick="addToDisplay('8')" class="option">8</button>
+        <button onclick="addToDisplay('9')" class="option">9</button>
+        <button onclick="addToDisplay('-')" class="option">-</button>
+
+        <button onclick="addToDisplay('4')" class="option">4</button>
+        <button onclick="addToDisplay('5')" class="option">5</button>
+        <button onclick="addToDisplay('6')" class="option">6</button>
+        <button onclick="addToDisplay('*')" class="option">*</button>
+
+        <button onclick="addToDisplay('1')" class="option">1</button>
+        <button onclick="addToDisplay('2')" class="option">2</button>
+        <button onclick="addToDisplay('3')" class="option">3</button>
+        <button onclick="addToDisplay('/')" class="option">/</button>
+
+        <button onclick="addToDisplay('00')" class="option">00</button>
+        <button onclick="addToDisplay('0')" class="option">0</button>
+        <button onclick="totalButton()" class="option sum">=</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
