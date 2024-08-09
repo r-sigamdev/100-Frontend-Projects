@@ -61,3 +61,9 @@ Project 12 Gallery Hover Effect 2 url: https://r-sigamdev.github.io/100-Frontend
 Project 13 My Portfolio url: https://r-sigamdev.github.io/100-Frontend-Projects/project13_portfoliio_website1
 
 <hr>
+Project 14 My Portfolio url: https://r-sigamdev.github.io/100-Frontend-Projects/project14_parallax_effect/
+
+<hr>
+Project 14 My Portfolio url: https://r-sigamdev.github.io/100-Frontend-Projects/project14_parallax_effect2/
+
+<hr>
