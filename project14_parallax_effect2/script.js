@@ -1,4 +1,5 @@
 window.onscroll = () => {
+  window.scrollBehaviour = "smooth";
   const img1 = document.querySelector(".image1");
   const img2 = document.querySelector(".image2");
   const img3 = document.querySelector(".image3");
@@ -15,7 +16,7 @@ window.onscroll = () => {
   //   img6.style.webkitTransform = "rotate(" + (45 + "deg" - scrollY) + ")";
 
   // for img1
-  img1.style.webkitTransform = "translateY(" + (2 + scrollY) + "px" + ")";
+  img1.style.webkitTransform = "translateY(" + (1 + scrollY) + "px" + ")";
   // img1.style.transformOrigin = "top";
   // img1.style.zIndex = "-999";
 
@@ -29,7 +30,6 @@ window.onscroll = () => {
 
   // for image6
   img6.style.webkitTransform = "rotateZ(" + window.pageYOffset / 30 + "deg)";
-
   // img6.style.transformOrigin = "topRight";
 
   // for img7 and img8
